@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monogram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --breakpoint-xs:  75rem;
+      --breakpoint-2xl: 100rem;
+      --breakpoint-3xl: 120rem;
+      }
+    </style>
+</head>
+<body class="bg-[#f0efed] font-[Prompt]">
+  <nav class="p-[7px] m-auto fixed w-full top-0 z-[1] sm:p-[15px]">
+    <div id="inner_navbar" class="p-[7px] flex justify-between items-center flex-wrap bg-[#1a2456] sm:p-[7.5px] ">
+      <!-- right-logo -->
+      <a href="" class="inline-block">
+        <svg class="text-[#efc2b3]" xmlns="http://www.w3.org/2000/svg" height="38" viewBox="0 0 520 114"
+          fill="currentColor">
+          <title>Monogram</title>
+          <path d="M150,36V0H0V114H150ZM144,6V36H78V6ZM6,6H72V72H6ZM72,108H6V78H72Zm72,0H78V78h0V42h66Z" />
+          <rect x="35.5" y="17" width="6" height="44" />
+          <rect x="53" y="17" width="6" height="44" />
+          <rect x="18" y="17" width="6" height="44" />
+          <path d="M111.5,50a25,25,0,1,0,25,25A25,25,0,0,0,111.5,50Zm0,44a19,19,0,1,1,19-19A19,19,0,0,1,111.5,94Z" />
+          <polygon
+            points="206.809 62.675 197.497 42.37 191.584 42.37 191.586 72.048 197.523 72.048 197.523 55.206 205.264 72.048 208.374 72.048 216.112 55.206 216.112 72.048 222.042 72.048 222.042 42.37 216.116 42.37 206.809 62.675" />
+          <path
+            d="M254.479,43.7a17.5,17.5,0,0,0-16.021,0,14.407,14.407,0,0,0-5.676,5.491,16.649,16.649,0,0,0,.006,16.083,14.247,14.247,0,0,0,5.671,5.463h0a16.777,16.777,0,0,0,7.787,1.927h.248a16.4,16.4,0,0,0,7.991-1.946,14.508,14.508,0,0,0,5.675-5.474,16.621,16.621,0,0,0-.006-16.063A14.429,14.429,0,0,0,254.479,43.7Zm.2,18.682a8.787,8.787,0,0,1-3.407,3.376,10.262,10.262,0,0,1-9.593,0,8.734,8.734,0,0,1-3.417-3.363,11.047,11.047,0,0,1-.026-10.274,8.733,8.733,0,0,1,3.407-3.394,9.8,9.8,0,0,1,4.858-1.211,9.653,9.653,0,0,1,4.81,1.209,8.786,8.786,0,0,1,3.38,3.384A11.041,11.041,0,0,1,254.678,62.38Z" />
+          <polygon
+            points="289.285 61.212 276.742 42.59 276.593 42.37 270.888 42.37 270.888 72.048 277.114 72.048 277.114 53.166 289.807 72.048 295.512 72.048 295.512 42.37 289.285 42.37 289.285 61.212" />
+          <path
+            d="M327.94,43.7a17.506,17.506,0,0,0-16.024,0,14.414,14.414,0,0,0-5.676,5.491,16.639,16.639,0,0,0,.006,16.083,14.249,14.249,0,0,0,5.672,5.463h0a16.767,16.767,0,0,0,7.786,1.927h.251a16.358,16.358,0,0,0,7.991-1.946,14.5,14.5,0,0,0,5.675-5.473,16.607,16.607,0,0,0-.006-16.064A14.435,14.435,0,0,0,327.94,43.7Zm.2,18.682a8.819,8.819,0,0,1-3.408,3.377,9.828,9.828,0,0,1-4.8,1.189,9.686,9.686,0,0,1-4.8-1.19,8.739,8.739,0,0,1-3.419-3.363,11.052,11.052,0,0,1-.024-10.274,8.715,8.715,0,0,1,3.4-3.394,10.261,10.261,0,0,1,9.668,0,8.777,8.777,0,0,1,3.379,3.384A11.047,11.047,0,0,1,328.139,62.38Z" />
+          <path
+            d="M360.847,60.071H365.7V65.68a12.124,12.124,0,0,1-9.842-.3A8.491,8.491,0,0,1,352.4,62.02a10.373,10.373,0,0,1-1.257-5.21,9.7,9.7,0,0,1,1.33-5.127,8.954,8.954,0,0,1,3.6-3.382,10.926,10.926,0,0,1,5.151-1.2,18.4,18.4,0,0,1,5.167.676,10.671,10.671,0,0,1,3.971,2.157l.826.71v-6.31l-.207-.15a13.858,13.858,0,0,0-4.574-2.173,21.461,21.461,0,0,0-5.627-.681,17.6,17.6,0,0,0-8.264,1.9,13.706,13.706,0,0,0-5.647,5.445,17.611,17.611,0,0,0,.008,16.272,13.557,13.557,0,0,0,5.631,5.413l.474.233.011-.025a20.172,20.172,0,0,0,18.694-1.363l.237-.147V54.911H360.847Z" />
+          <path
+            d="M430.287,41.958h-5.74L412.621,71.636h6.435l2.59-6.606h11.5l2.633,6.606h6.391L430.412,42.271Zm1.033,17.766h-7.845L427.4,49.45Z" />
+          <polygon
+            points="476.574 41.958 467.268 62.263 457.955 41.958 452.043 41.958 452.031 71.636 457.969 71.636 457.969 54.794 465.709 71.636 468.82 71.636 476.56 54.794 476.56 71.636 482.501 71.636 482.501 41.958 476.574 41.958" />
+          <path
+            d="M404.4,57.222a9.5,9.5,0,0,0,1.649-5.623,9.138,9.138,0,0,0-2.779-7.193,11.069,11.069,0,0,0-7.683-2.448H383.069V71.636h6.225v-10.5h4.883l5.554,10.5h6.483l-5.959-11.25A9.062,9.062,0,0,0,404.4,57.222Zm-4.579-5.62a3.694,3.694,0,0,1-1.351,3.125,6.154,6.154,0,0,1-3.8,1.1h-.024l-5.345,0V47.266h5.345C398.172,47.266,399.817,48.633,399.818,51.6Z" />
+        </svg></a>
+      <!-- left-logo -->
+      <div class="flex  items-center ">
+        <a class="px-[10.5px] py-[3.5px] text-[#efc2b3] lg:hidden" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" aria-hidden="true" fill="currentColor"
+            class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </a>
+        <div class="text-[#efc2b3] max-lg:hidden  ">
+          <ul class="flex lg:ml-auto ">
+            <li class="text-[12px] font-[300] leading-[18px] tracking-[2px] uppercase ml-3 my-auto text-left "><a
+                class="p-[7.5px]" href="">
+                How it Works
+              </a>
+            </li>
+            <li class="text-[12px] font-[300] leading-[18px] tracking-[2px] uppercase ml-3 my-auto text-left "><a
+                class="p-[7.5px]" href="">
+                Workflows
+                <span class="text-14px">▾</span>
+              </a>
+            </li>
+            <li class="text-[12px] font-[400] leading-[18px] tracking-[2px] uppercase ml-3 my-auto text-left "><a
+                class="p-[7.5px]" href="">
+                Download
+              </a>
+            </li>
+            <li class="text-[12px] font-[400] leading-[18px] tracking-[2px] uppercase ml-3 my-auto text-left "><a
+                class="p-[7.5px]" href="">
+                Blog
+              </a>
+            </li>
+            <li class="text-[12px] font-[400] leading-[18px] tracking-[2px] uppercase ml-3 my-auto text-left "><a
+                class="p-[7.5px]" href="">
+                Support
+              </a>
+            </li>
+            <li class="text-[12px] font-[400] leading-[18px] tracking-[2px] uppercase ml-3 my-auto text-left "><a
+                class="p-[7.5px]" href="">
+                Shop
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="px-[7px] py-[5.25px] text-[#efc2b3] lg:ml-[15px]" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25" fill="currentColor" class="bi bi-bag"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+          </svg>
+        </a>
+        <a class="px-[15px] py-[7.5px] text-[15px] font-bold text-[#efc2b3] sm:font-[600] lg:p-[7.5px]" href="">
+          USD
+          <span class="text-14px">▾</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- main-header -->
+    <div>
+      <img class="block  z-[-2] w-full h-[450px] object-cover object-[50%_50%] bg-[#1a2456] opacity-[1] md:h-[675px]"
+        src="assets/shop_cta_xl_896f6b8270.jpg" alt="">
+    </div>
+    <div class=" bg-black absolute top-0 z-[0] w-full h-[450px] opacity-[62%] md:h-[675px]">
+    </div>
+    <!-- main-haider-text-container -->
+    <div class="px-5 absolute top-[109px] ml-auto mr-auto w-full md:top-[219px]">
+      <div class="text-center mb-[42px] mt-[42px] md:my-[45px]">
+        <div
+          class="text-[#efc2b3] text-[35px] font-[600] tracking-[4px] leading-[42px] font-[Prompt]  mb-[14px]  md:text-[37.5px] md:leading-[45px] ">
+          <h1 class="">A CONSOLE FOR <br> EVERY WORKFLOW</h1>
+        </div>
+        <div class="text-[#efc2b3] text-[17.5px] font-[300] font-[Prompt] mb-[16.8px] md:text-[18.75px]">
+          Discover the perfect console for yours.
+        </div>
+      </div>
+      <div
+        class="text-[#fff] text-[35px] flex justify-center mt-[82px] overflow-hidden hover:scale-125 transition duration-700 md:mt-[201px]">
+        <a class="overflow-hidden" href=""> <svg xmlns="http://www.w3.org/2000/svg"
+            class="downward-indicator-module--downIcon--1e586 animations-module--slideUp--66da7 animations-module--slideUpStart--f5cb8"
+            width="1.5em" height="1.5em" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <!-- image_container -->
+    <section class="py-[21px] sm:py-[22.5px] md:py-[45px]">
+      <!-- image_group_1 -->
+      <div id="container"
+        class="px-5 ml-auto mr-auto w-full sm:max-w-[600px] md:max-w-[720px] lg:max-w-[980px] xl:max-w-[1240px] ">
+        <div class="ml-[-7.5px] mr-[-7.5px] flex flex-wrap ">
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] ">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300" src="assets/buttom.webp" alt="">
+                <img src="assets/xyz.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px] ">MINI CANSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p class="text-[12.6px] text-[#1a2456] font-[300] md:text-[13.5px] ">Ideal for everyday shortcuts.
+                Adaptable
+                to any workflow.</p>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] ">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300" src="assets/cansole.webp" alt="">
+                <img src="assets/sound-controler.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p class="text-[12.6px] text-[#1a2456] font-[300] md:text-[13.5px]  ">Ideal for photo & video. Adaptable
+                to
+                any workflow.
+
+              </p>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] ">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300" src="assets/cansole_red.webp"
+                  alt="">
+                <img src="assets/sound-bash.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px] ">MINI CANSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p class="text-[12.6px] text-[#1a2456] font-[300] md:text-[13.5px] ">Ideal for everyday shortcuts.
+                Adaptable
+                to any workflow.</p>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] ">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300" src="assets/cansole-green.webp"
+                  alt="">
+                <img src="assets/bass-triple.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p class="text-[12.6px] text-[#1a2456] font-[300] md:text-[13.5px]  ">Ideal for photo & video. Adaptable
+                to
+                any workflow.
+
+              </p>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full  ">
+            <a href="" class="relative">
+              <div class="relative">
+                <img
+                  class="absolute top-0 hover:opacity-0 transition duration-300 w-full h-full object-cover md:h-[271px] lg:h-[380px] "
+                  src="https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_Multipad-v2_1080x731_crop_center.png.webp?v=1711651403"
+                  alt="">
+                <img class="w-full h-full object-cover md:h-[271px] lg:h-[380px]" src="assets/keyboard_rotate.webp"
+                  alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px] ">MINI CANSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p class="text-[12.6px] text-[#1a2456] font-[300] md:text-[13.5px] ">Ideal for everyday shortcuts.
+                Adaptable
+                to any workflow.</p>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="relative">
+        <img
+          class=" object-cover  z-[-5] w-full h-[315px] object-[50%_100%] sm:h-[337.5px] sm:object-fill md:h-[506px] md"
+          src="assets/shop-banner-module.jpg" alt="">
+        <div class="px-5 absolute top-0 w-full h-[315px] sm:h-[337.5px] md:h-[506px]">
+          <div class="mt-[42px]  text-center text-[#1a2456]  sm:mt-[45px]  ">
+            <h1
+              class="text-[35px] font-[600] leading-[42px] tracking-[4px] uppercase mb-[15px] sm:text-[37.5px] sm:leading-[45px] ">
+              Create Your Own
+              Console
+            </h1>
+            <p class="text-[17.5px] font-[300] leading-[26.25px] mb-[16.8px] sm:-[18.75px] sm:leading-[28.125px]">Add-on
+              to make it perfect.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-[21px] sm:py-[22.5px] md:py-[45px]">
+      <div id="container"
+        class="px-5 ml-auto mr-auto w-full sm:max-w-[600px] md:max-w-[720px] lg:max-w-[980px] xl:max-w-[1240px] ">
+        <div class="ml-[-7.5px] mr-[-7.5px] flex flex-wrap ">
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%] ">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300 w-full h-full object-cover "
+                  src="assets/keyboard_2.webp" alt="">
+                <img class="w-full h-full" src="assets/pink.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300  w-full h-full object-cover"
+                  src="assets/small-keyboard.webp" alt="">
+                <img class="w-full h-full" src="assets/keyboard-3.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300 w-full h-full object-cover "
+                  src="assets/module.webp" alt="">
+                <img class="w-full h-full" src="assets/btn.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300 h-full w-full object-cover"
+                  src="assets/slider.webp" alt="">
+                <img class="w-full h-full" src="assets/triple-btn.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300 w-full h-full object-cover "
+                  src="assets/orbiter.webp" alt="">
+                <img class="w-full h-full" src="assets/single-bass.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300 h-full w-full object-cover"
+                  src="assets/keys.webp" alt="">
+                <img class="w-full h-full" src="assets/three-btn.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300 w-full h-full object-cover "
+                  src="assets/dial.webp" alt="">
+                <img class="w-full h-full" src="assets/fff.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class="absolute top-0 hover:opacity-0 transition duration-300 h-full w-full object-cover"
+                  src="assets/bag.jpg" alt="">
+                <img class="w-full h-full" src="assets/open-bage.jpg" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class=" w-full h-full object-cover " src="assets/video.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class=" w-full h-full object-cover " src="assets/photo.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%] ">
+            <a href="" class="relative">
+              <div class="relative">
+                <img class=" w-full h-full object-cover " src="assets/auidio.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+          <div class="px-[7px] mb-[21px] w-full md:flex-[0_0_50%] md:max-w-[50%] xl:flex-[0_0_33.3%] xl:max-w-[33.3%]">
+            <a href="" class="relative">
+              <div class="relative">
+                <img
+                  class="absolute top-0 hover:opacity-0 transition duration-300 h-full w-full object-cover md:h-[240px] lg:h-[333px]"
+                  src="assets/care.jpg" alt="">
+                <img class="w-full h-full md:h-[240px] lg:h-[333px]" src="assets/care-red.webp" alt="">
+              </div>
+              <div class="pt-[7px] text-[#1a2456] leading-[21px] flex justify-between">
+                <h1 class="text-[17.5px] font-[600]  tracking-[1.5px] mb-[7px] md:text-[18.5px]">AUDIO CONSOLE</h1>
+                <P class="text-[14px] text-[#6c757d] font-[300] ml-[7px] text-end">Sold Out</P>
+              </div>
+              <p
+                class="bg-[#ff8d6b] inline-block text-[11.55px] font-[600] leading-[11.55px] px-[14px] py-[7px] ml-[3.5px] text-center tracking-normal absolute top-[1rem] right-0 md:text-[12.375px]">
+                PRE-ORDER
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="px-5 py-10 text-[#efc2b3] bg-[#1a2456] sm:p-[45px] overflow-x-hidden ">
+    <div class=" flex flex-wrap mx-[-20px] ">
+      <div
+        class="px-5 pb-[21px] order-[0] flex-[0_0_100%] max-w-[100%] sm:flex-[0_0_66.6%] sm:max-w-[100%] sm:order-1 lg:flex-[0_0_33.3%] lg:max-w-[33.3%] lg:order-9">
+        <p class="text-[10.8px] font-[600] tracking-[1px] leading-15.12px uppercase mb-[14px]">Subscribe to Monogram</p>
+        <p class="text-[12.6px] font-[300] leading-[18.9px] mb-[7px]">Master productivity with Creative Console and get
+          all the
+          <br> latest Monogram news.
+        </p>
+        <div class="">
+          <input placeholder="Email Addres"
+            class="border-[1px] border-[#efc2b3] text-[#fff] text-[12.6px] font-[300] leading-[18.9px] px-[7px] py-[0.667px] h-[27.89px] w-[198px] mb-[14px]"
+            type="email">
+          <button
+            class="opacity-[65px] px-[24.5px] py-[5.25px] border-[1px] text-[10.5px] tracking-[1px] font-[600] leading-[15.75px] bg-[#b1a5a2] text-black rounded-[100px] ml-[7px]">SUBMIT</button>
+        </div>
+        <div class="pb-[14px]">
+          <a class="inline-block p-[6.3px] rounded-[50px]  bg-[#efc2b3]" href="">
+            <svg class=" w-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+            </svg>
+          </a>
+          <a class="inline-block p-[6.3px] rounded-[50px]  bg-[#efc2b3]" href="">
+            <svg class=" w-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+            </svg>
+          </a>
+          <a class="inline-block p-[6.3px] rounded-[50px]  bg-[#efc2b3]" href="">
+            <svg class=" w-3 h-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
+              <path
+                d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" />
+            </svg>
+          </a>
+          <a class="inline-block p-[6.3px] rounded-[50px]  bg-[#efc2b3]" href="">
+            <svg class=" w-3 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path
+                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="px-5 pb-[21px] order-1 flex-[0_0_50%] max-w-[50%] sm:flex-[0_0_33.3%] sm:max-w-[33.3%] sm:order-0 lg:flex-[0_0_16.6%] lg:max-w-[16.6%]">
+        <p class="text-[10.8px] font-[600] tracking-[1px] leading-15.12px uppercase mb-[14px]">Monogram</p>
+        <address class="text-[12.5px] not-italic  font-300px leading-[20.25px] mb-[14px]">
+          305 King St. W. <br>
+          Suite 502 <br>
+          Kitchener, ON <br>
+          Canada
+        </address>
+      </div>
+      <div
+        class="px-5 pb-[21px] order-2 flex-[0_0_50%]  max-w-[50%] sm:flex-[0_0_33.3%] sm:max-w-[33.3%] lg:flex-[0_0_16.6%] lg:max-w-[16.6%]">
+        <p class="text-[10.8px] font-[600] tracking-[1px] leading-15.12px uppercase mb-[14px]">quick links</p>
+        <ul class="text-[12.6px]">
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Home</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">How it Works</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Shop</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Download</a></li>
+        </ul>
+      </div>
+      <div
+        class="px-5 pb-[21px] order-3 flex-[0_0_50%]  max-w-[50%] sm:flex-[0_0_33.3%] sm:max-w-[33.3%] lg:flex-[0_0_16.6%] lg:max-w-[16.6%]">
+        <p class="text-[10.8px] font-[600] tracking-[1px] leading-15.12px uppercase mb-[14px]">Help</p>
+        <ul class="text-[12.6px]">
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">FAQs</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Support Center</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Shipping and Sales</a></li>
+        </ul>
+      </div>
+      <div
+        class="px-5 pb-[21px] order-4 flex-[0_0_50%]  max-w-[50%] sm:flex-[0_0_33.3%] sm:max-w-[33.3%] lg:flex-[0_0_16.6%] lg:max-w-[16.6%]">
+        <p class="text-[10.8px] font-[600] tracking-[1px] leading-15.12px uppercase mb-[14px]">Information</p>
+        <ul class="text-[12.6px]">
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">About Us</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Work with us</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Privacy Policy</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Terms of Use</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Terms of Sale</a></li>
+          <li class="mb-[5.04px] hover:underline hover:text-[#ff7952]"><a href="">Press Kit</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
